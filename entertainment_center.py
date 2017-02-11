@@ -1,5 +1,5 @@
-import fresh_tomatoes
 import media
+import fresh_tomatoes
 
 # Create instances of 'movie' class located in 'media'
 toy_story = media.Movie(
