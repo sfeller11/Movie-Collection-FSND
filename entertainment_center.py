@@ -1,10 +1,22 @@
-import media
+# -----------------------------------------------------------------------------
+# Name:        entertainment_center
+# Purpose:     This module creates instances of the class 'movie' in 'media',
+#              collcets them in a list and then opens a webbrowser displaying
+#              a newley created html with the movie collection.
+#
+# Author:      Stephan Feller
+# Created:     12.02.2017
+# -----------------------------------------------------------------------------
+
 import fresh_tomatoes
+import media
+
 
 # Create instances of 'movie' class located in 'media'
+print("Creating movie objects...\n")
 toy_story = media.Movie(
                 "Toy Story",  # Movie title
-                "A story of a boy and his toys that come to life",   #Storyline
+                "A story of a boy and his toys that come to life",  # Storyline
                 "https://images-na.ssl-images-amazon.com/images/M/MV5BMDU2ZWJlMjktMTRhMy00ZTA5LWEzNDgtYmNmZTEwZTViZWJkXkEyXkFqcGdeQXVyNDQ2OTk4MzI@._V1_SY1000_SX670_AL_.jpg",  # NOQA
                 "https://www.youtube.com/watch?v=4KPTXpQehio")  # YouTube URL
 
@@ -48,8 +60,10 @@ pulp_fiction = media.Movie(
                 "https://www.youtube.com/watch?v=s7EdQ4FqbhY")  # YouTube URL
 
 # Create 'movies' list containing movie objects
+print("\nCreating movies list...")
 movies = [toy_story, avatar, school_of_rock, midnight_in_paris,
           hunger_games, pulp_fiction]
 
 # Run method 'open_movies' to create and open 'fresh_tomatoes.html'
+print("\nOpening movie collection in browser ...")
 fresh_tomatoes.open_movies_page(movies)
