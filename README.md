@@ -2,6 +2,9 @@
 
 by rocksta80
 
+![Example](https://github.com/rocksta80/Movie-Collection-FSND/blob/master/example.png)
+
+
 # Table of contents
 - [Introduction] (https://github.com/rocksta80/Movie-Collection-FSND#Introduction)
 - [Installation] (https://github.com/rocksta80/Movie-Collection-FSND#Installation)
